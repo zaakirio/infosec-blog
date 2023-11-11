@@ -101,21 +101,21 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-    author: Theme PaperMod
+    description: "Zaki's Infosec Blog"
+    author: Zaki
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
     # disableThemeToggle: true
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowReadingTime: true
     # disableSpecial1stPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
-    ShowRssButtonInSectionTermList: true
-    ShowToc: true
+    ShowRssButtonInSectionTermList: false
+    ShowToc: false
     # comments: false
     images: ["papermod-cover.png"]
 
@@ -135,7 +135,7 @@ params:
     homeInfoParams:
         Title: "Zaki's Infosec Journey"
         Content: >
-            Home to my cybser-security writeups 🤖
+            Home to my cyber-security writeups 🤖
 
 
     socialIcons:
