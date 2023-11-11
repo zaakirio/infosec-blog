@@ -32,8 +32,10 @@ Once connected to the box I started by running an nmap scan to identify any acti
 ### Initial Foothold
 
 We are met with a login page.
-![a](https://raw.githubusercontent.com/swisskyrepo/PayloadsAllTheThings/master/.github/banner.png)
-Inspecting the pages source we learn that it uses a bootstrap template. Searching the version and template name leads us to the discovery that it uses the spring boot framework. At this point I decided to perform directory enumeration using a springboot supported wordlist. Fortunately, SecLists has a pretty robust wordlist for this
+![](https://raw.githubusercontent.com/zaakirio/infosec-blog/master/content/posts/htb/images/cozy-login.png)
+Inspecting the pages source we learn that it uses a bootstrap template.
+![](https://raw.githubusercontent.com/zaakirio/infosec-blog/master/content/posts/htb/images/bootstrap-header-cozy.png)
+ Searching the version and template name leads us to the discovery that it uses the spring boot framework. At this point I decided to perform directory enumeration using a springboot supported wordlist. Fortunately, SecLists has a pretty robust wordlist for this
 
 ```bash
 gobuster dir -w /usr/share/wordlists/seclists/Discovery/Web-Content/spring-boot.txt -u http://cozyhosting.htb
